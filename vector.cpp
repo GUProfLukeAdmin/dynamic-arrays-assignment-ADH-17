@@ -5,12 +5,7 @@ using namespace std;
 
 void part1() {
     //TODO: Implement part 1
-    vector<int> vec{};
-    // add 50000 integers to the vector
-    for(int i = 0; i < 50000; i++){
-        vec.push_back(i); 
-        
-    }
+    vector<int> vec(10000, 1);
     // log the size and capacity of the vector
     cout << "After Adding Element s: Size = " << vec.size() << ", Capacity = " << vec.capacity() << endl;
 
@@ -33,6 +28,8 @@ void part2() {
 
     cout << "Memory usage of vector<bool> = " << vec_bool.size()/8 << " due to bit condensing" << endl;
     cout << "Memory usage of vector<char> = " << vec_char.size() << " normal sizing" << endl;
+
+
 }
 
 int main() {
